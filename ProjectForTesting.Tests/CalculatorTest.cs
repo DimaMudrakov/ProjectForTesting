@@ -15,7 +15,7 @@ namespace ProjectForTesting.Tests
             var result = calculator.Subtract(a, b);
             var expected = 0;
 
-            Assert.Equal(result, expected);
+            Assert.Equal(expected, result);
         }
 
         [Theory]
@@ -29,7 +29,7 @@ namespace ProjectForTesting.Tests
             var result = calculator.Divide(a, b);
             var expected = 8;
 
-            Assert.Equal(result, expected);
+            Assert.Equal(expected, result);
         }
 
         [Fact]
@@ -37,10 +37,10 @@ namespace ProjectForTesting.Tests
         {
             var calculator = new Calculator();
 
-            var result = calculator.Add(10, 10);
-            var expected = 20;
+            var result = calculator.Add(15, 10);
+            var expected = 25;
 
-            Assert.Equal(result, expected);
+            Assert.Equal(expected, result);
         }
 
         [Fact]
@@ -51,7 +51,7 @@ namespace ProjectForTesting.Tests
             var result = calculator.Multiply(5, 20);
             var expected = 100;
 
-            Assert.Equal(result, expected);
+            Assert.Equal(expected, result);
         }
     }
 }

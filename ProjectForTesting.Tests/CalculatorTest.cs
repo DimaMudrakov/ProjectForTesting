@@ -7,21 +7,21 @@ namespace ProjectForTesting.Tests
         [Theory]
         [InlineData(20, 20)]
         [InlineData(40, 40)]
-        [InlineData(33, 33)]
+        [InlineData(33, 331)]
         public void CalculatorSubtractShouldEqualToResult(int a, int b)
         {
             var calculator = new Calculator();
 
             var result = calculator.Subtract(a, b);
-            var expected = 0;
+            var expected = 0;s
 
             Assert.Equal(expected, result);
         }
 
         [Theory]
-        [InlineData(24, 3)]
+        [InlineData(24, 3, Skip = "Here must be a reason of skip")]
         [InlineData(32, 4)]
-        [InlineData(40, 5)]
+        [InlineData(401, 5)]
         public void CalculatorDivideShouldEqualToResult(int a, int b)
         {
             var calculator = new Calculator();
@@ -32,7 +32,7 @@ namespace ProjectForTesting.Tests
             Assert.Equal(expected, result);
         }
 
-        [Fact]
+        [Fact(Skip = "Here must be a reason of skip.")]
         public void CalculatorAddShouldEqualToResult()
         {
             var calculator = new Calculator();

@@ -13,7 +13,7 @@ namespace ProjectForTesting.Tests
             var calculator = new Calculator();
 
             var result = calculator.Subtract(a, b);
-            var expected = 0;s
+            var expected = 0;
 
             Assert.Equal(expected, result);
         }
